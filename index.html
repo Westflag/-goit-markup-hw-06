@@ -51,6 +51,9 @@
         </li>
       </ul>
     </address>
+    <svg class="nav-menu-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-burger-menu" />
+    </svg>
   </div>
 </header>
 <main>
@@ -448,7 +451,8 @@
       <p class="text-body-medium footer-subscribe-title">Subscribe</p>
       <form class="footer-subscribe-form">
         <label class="subscribe-form-label" for="subscribe-email">
-          <input class="subscribe-form-input" type="email" id="subscribe-email" placeholder="E-mail" name="subscribe-email" />
+          <input class="subscribe-form-input" type="email" id="subscribe-email" placeholder="E-mail"
+                 name="subscribe-email" />
         </label>
         <button class="subscribe-button" type="submit">Subscribe
           <svg width="24" height="24" class="subscribe-button-icon">
@@ -459,7 +463,7 @@
     </div>
   </div>
 </footer>
-<div class="modal-overlay is-open">
+<div class="modal-overlay">
   <div class="modal">
     <button class="modal-close" type="button">
       <svg class="modal-close-icon" width="8" height="8">
@@ -516,6 +520,62 @@
       <button class="modal-button-submit button-text" type="button">Send</button>
     </form>
   </div>
+</div>
+<div class="burger-menu">
+  <button class="modal-close" type="button">
+    <svg class="modal-close-icon" width="8" height="8">
+      <use href="./images/icons.svg#icon-close" />
+    </svg>
+  </button>
+  <ul class="menu-nav-list">
+    <li>
+      <a class="text-title" href="./index.html">Studio</a>
+    </li>
+    <li>
+      <a class="text-title" href="">Portfolio</a>
+    </li>
+    <li>
+      <a class="text-title" href="">Contacts</a>
+    </li>
+  </ul>
+  <ul class="menu-contact-info">
+    <li>
+      <a class="text-subtitle" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+    <li>
+      <a class="text-subtitle" href="tel:+110001111111">+11 (000) 111-11-11</a>
+    </li>
+  </ul>
+  <ul class="menu-socials-list">
+    <li class="menu-social-item">
+      <a class="menu-social-link" href="">
+        <svg class="menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram" />
+        </svg>
+      </a>
+    </li>
+    <li class="menu-social-item">
+      <a class="menu-social-link" href="">
+        <svg class="menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter" />
+        </svg>
+      </a>
+    </li>
+    <li class="menu-social-item">
+      <a class="menu-social-link" href="">
+        <svg class="menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook" />
+        </svg>
+      </a>
+    </li>
+    <li class="menu-social-item">
+      <a class="menu-social-link" href="">
+        <svg class="menu-social-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin" />
+        </svg>
+      </a>
+    </li>
+  </ul>
 </div>
 </body>
 </html>
