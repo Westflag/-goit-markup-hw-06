@@ -52,6 +52,8 @@ nav, li {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .footer {
@@ -66,7 +68,7 @@ img {
     align-items: baseline;
     gap: 24px;
     row-gap: 72px;
-    justify-content: start;
+    justify-content: center;
 }
 
 .footer-container-logo {
@@ -121,12 +123,15 @@ img {
 }
 
 .footer-container-subscribe {
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-subscribe-title {
     margin-bottom: 16px;
     color: #ffffff;
+    align-content: center;
 }
 
 .footer-subscribe-form {
@@ -190,7 +195,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 76px;
     color: var(--color-primary-brand);
 }
 
@@ -232,7 +236,7 @@ img {
     display: none;
     gap: 40px;
     padding: 24px 0;
-    margin: 0;
+    margin: 0 0 0 76px;
 }
 
 .nav-menu-icon {
@@ -304,7 +308,7 @@ img {
     padding: 72px 0;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_section_order.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_section_order_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -325,11 +329,29 @@ img {
 .steps-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
 }
 
 .steps-item {
     flex-basis: 288px;
+}
+
+.steps-item-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    color: var(--color-dark);
+}
+
+.steps-item-body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
 }
 
 .steps-item-icon {
@@ -355,7 +377,7 @@ img {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
     margin: auto auto;
     justify-content: center;
 }
@@ -373,6 +395,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 8px;
 }
 
 .team-social-item {
@@ -502,11 +525,13 @@ img {
 .title {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 56px;
-    letter-spacing: 0.02em;
+    font-size: 36px;
     text-align: center;
-    line-height: 1.07;
-    max-width: 496px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    letter-spacing: 0.02em;
+    max-width: 216px;
     color: var(--color-white-background);
 }
 
@@ -883,6 +908,17 @@ img {
 }
 
 @media (min-width: 768px) {
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 56px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        line-height: 1.07;
+        max-width: 496px;
+        color: var(--color-white-background);
+    }
+
     .container {
         width: 768px;
     }
@@ -890,6 +926,7 @@ img {
     .section-order {
         padding: 112px 0;
         max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_section_order_tablet.jpg);
     }
 
     .section-order-container {
@@ -897,6 +934,9 @@ img {
     }
 
     .steps-list {
+        gap: 24px;
+        row-gap: 72px;
+        justify-content: center;
         flex-basis: calc((100% - 3 * 24px) / 2);
     }
 
@@ -905,6 +945,7 @@ img {
     }
 
     .team-list {
+        gap: 24px;
         flex-basis: auto;
     }
 
@@ -927,6 +968,8 @@ img {
     .contact-info {
         display: flex;
         flex-wrap: wrap;
+        gap: 12px;
+        justify-content: end;
     }
 
     .nav-menu-icon {
@@ -936,9 +979,33 @@ img {
     .modal {
         width: 408px;
     }
+
+    .footer-container {
+        width: 584px;
+        justify-content: start;
+    }
+
+    .footer-container-subscribe {
+        display: block;
+    }
+
+    .project-list {
+        row-gap: 72px;
+    }
 }
 
 @media (min-width: 1158px) {
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 56px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        line-height: 1.07;
+        max-width: 496px;
+        color: var(--color-white-background);
+    }
+
     .container {
         width: 1158px;
     }
@@ -946,6 +1013,7 @@ img {
     .section-order {
         padding: 188px 0;
         max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_section_order_desktop.jpg);
     }
 
     .section-order-container {
@@ -957,6 +1025,7 @@ img {
     }
 
     .steps-list {
+        gap: 24px;
         flex-basis: calc((100% - 3 * 24px) / 4);
     }
 
@@ -973,6 +1042,7 @@ img {
     }
 
     .team-list {
+        gap: 24px;
         flex-basis: auto;
     }
 
@@ -1003,6 +1073,8 @@ img {
 
     .footer-container {
         flex-wrap: nowrap;
+        gap: unset;
+        justify-content: start;
     }
 
     .footer-subscribe-form {
@@ -1024,6 +1096,29 @@ img {
 
     .modal {
         width: 408px;
+    }
+
+    .footer-container-subscribe {
+        justify-content: start;
+    }
+
+    .steps-item-subtitle {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: capitalize;
+        letter-spacing: 0.02em;
+        color: var(--color-dark);
+    }
+
+    .steps-item-body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        line-height: 1.5;
     }
 }
 
